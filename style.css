@@ -1,0 +1,222 @@
+/* start of CSS reset sheet */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* end of CSS reset sheet */
+
+/* -----------start of my CSS code------------------------ */
+
+/* The navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+
+/* siegrist lab link inside the navbar */
+.navbar a:first-child {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* research, people, and publications links inside the navbar */
+.navbar a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+
+/**
+ * 1. Centers the content. Yes, it's a bit opinionated.
+ * 2. See the "width vs max-width" section
+ * 3. See the "Additional Padding" section
+ */
+.wrapper {
+	margin-right: auto; /* 1 */
+	margin-left:  auto; /* 1 */
+	max-width: 960px; /* 2 */
+	padding-right: 10px; /* 3 */
+	padding-left:  10px; /* 3 */
+}
+
+/* Main content */
+.main {
+	margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+.index-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-bottom: 30px;
+}
+
+.index-description {
+	font-family: Arial;
+	font-size: 22px;
+	padding-bottom: 30px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.people-column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.people-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.people-current-members {
+	font-size: 40px;
+}
+
+.people-alumni {
+	padding-top: 30px;
+	font-size: 40px;
+}
+
+.publications-header {
+	padding-bottom: 15px;
+	font-size: 40px;
+}
+
+.research-topic-header {
+	font-size: 40px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.research-descriptions {
+	padding-bottom: 15px;
+}
+
+
+
